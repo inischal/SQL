@@ -47,5 +47,20 @@ UPDATE customers
 SET score = 0
 WHERE id = 6;
 
+SELECT * FROM customers where id = 8;
+-- Task: Change the score of the customer with iD 8 to 0 and update the country to 'UK'
+UPDATE customers
+SET score = 0,country = 'UK'
+WHERE id = 8
 
+--DELETE command
+--TASK: Delete all customers with an ID greater than 5
+--SYNTAX: 
+		/* DELETE FROM table_name
+		WHERE <CONDITION> */
+DELETE FROM customers
+WHERE id > 5;
+
+--TASK: Delete all data from table persons
+TRUNCATE TABLE persons;
 
