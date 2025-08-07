@@ -31,3 +31,21 @@ from customers
 select * from persons;
 
 
+
+/* UPDATE COMMAND */
+
+/* SYNTAX: UPDATE table_name
+	SET column1 =  value1,
+		column2 =  value2
+	WHERE <CONDITION> */
+
+-- NOTE: Always use WHERE to avoid UPDATING all rows unintentionally
+
+
+/* Change the score of customer 6 to 0 */
+UPDATE customers
+SET score = 0
+WHERE id = 6;
+
+
+
